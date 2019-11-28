@@ -2,7 +2,7 @@
 <main class="grid">
   <article v-for="post in posts">
     <a :href="post.path">
-    <img src="https://www.quackit.com/pix/samples/23m.jpg" alt="Sample photo">
+    <img :src="post.frontmatter.image" :alt="post.title">
     </a>
     <div class="text">
         <h3>{{post.title}}</h3>
