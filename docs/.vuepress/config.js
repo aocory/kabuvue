@@ -51,7 +51,7 @@ module.exports = {
     }],
     ['meta', {
       name: "og:site_name",
-      content: "CodeRecipe"
+      content: "米国株ガイド"
     }],
     ['meta', {
       name: "twitter:image",

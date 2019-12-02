@@ -29,6 +29,8 @@ def pptx(a):
                     paragraph.text=a["company"]
                 elif paragraph.text=='%Annual Dividend Yield':
                     paragraph.text=a["Forward_Annual_Dividend_Yield_4"]
+                elif paragraph.text=='desc':
+                    paragraph.text=a["disc"]
             for paragraph in shape.text_frame.paragraphs:
                 print(paragraph.text)
     for slide in prs.slides:

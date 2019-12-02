@@ -7,6 +7,9 @@ rakuten: true
 sbi: true
 manex: true
 image: /img/{{date}}.png
+meta:
+- og:title: '配当利回り{{a.Forward_Annual_Dividend_Yield_4}}!{{a.company}}の銘柄分析'
+- og:image: '/img/{{date}}.png'
 ---
 この記事は、{{date}}現在の情報を元に記事を作成しています。
 
