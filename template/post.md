@@ -182,3 +182,5 @@ dateの時点の{{a.company}}の評価尺度は以下になります。
 |配当落ち日|{{a["Ex-Dividend_Date_4"]}}|
 |最終分割係数|{{a['Last_Split_Factor_(new_per_old)_2']}}|
 |最終分割日|{{a["Last_Split_Date_3"]}}|
+
+<a href="https://stock.blogmura.com/ranking/in?p_cid=11016741" target="_blank" ><img src="https://b.blogmura.com/stock/88_31.gif" width="88" height="31" border="0" alt="にほんブログ村 株ブログへ" /></a><br /><a href="https://stock.blogmura.com/ranking/in?p_cid=11016741">にほんブログ村</a>
