@@ -46,7 +46,6 @@ def pptx(a):
 
 def create_post(a):
     d_today = datetime.date.today()
-    time=d_today-ex_date
     print(a["company"])
     dir_path = os.path.join('docs', 'blog')
     file_name = str(d_today) + '.md'
@@ -102,10 +101,11 @@ def slide1(a):
             f.write(txt) 
 
 if __name__ == '__main__':
+    symbol = "M"
     a=get_data(symbol)
     b=div_his(symbol)
     c=static_data(symbol)
     a.update(b)
     a.update(c)
-    # pptx(a)
+    pptx(a)
     create_post(a)
