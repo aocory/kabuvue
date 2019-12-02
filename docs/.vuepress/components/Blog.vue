@@ -6,7 +6,6 @@
     </a>
     <div class="text">
         <h3>{{post.title}}</h3>
-      <p>Collaboratively administrate empowered markets via plug-and-play networks.</p>
     <a :href="post.path" class='btn blue'>More</a>
     </div>
   </article>
