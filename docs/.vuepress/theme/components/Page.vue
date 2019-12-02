@@ -8,6 +8,8 @@
     <PageNav v-bind="{ sidebarItems }" />
 
     <slot name="bottom" />
+    
+<a href="https://stock.blogmura.com/ranking/in?p_cid=11016741" target="_blank" ><img src="https://b.blogmura.com/stock/88_31.gif" width="88" height="31" border="0" alt="にほんブログ村 株ブログへ" /></a><br /><a href="https://stock.blogmura.com/ranking/in?p_cid=11016741">にほんブログ村</a>
   </main>
 </template>
 
