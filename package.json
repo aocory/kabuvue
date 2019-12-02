@@ -1,6 +1,22 @@
 {
+  "name": "vuepress_blog_sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "vue-carousel": "^0.18.0",
+    "vuepress": "^1.0.0-rc.1",
+    "vuepress-plugin-sitemap": "^2.3.0",
+    "vuepress-theme-meteorlxy": "^1.0.0-alpha.32"
+  },
+  "devDependencies": {
+    "@vuepress/plugin-google-analytics": "^1.2.0"
   }
 }
