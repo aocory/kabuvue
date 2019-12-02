@@ -68,14 +68,7 @@ module.exports = {
     themeConfig: {
       nav: [
         { text: 'Home', link: '/' },
-        { text: 'Blog', link: '/blog/' },
-        { text: '銘柄検索', ariaLabel: 'Refference Menu',
-        items:[
-          { text: 'Nasdaq', link: '/nasdaq/' },
-          { text: 'NYSE', link: '/nyse/' },
-          { text: 'AMEX', link: '/amex/' },
-        ]
-      }
+        { text: 'Blog', link: '/blog/' }
       ]
     }
   }
