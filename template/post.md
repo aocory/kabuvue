@@ -167,7 +167,7 @@ dateの時点の{{a.company}}の評価尺度は以下になります。
 |発行済み株式の空売り率（|{{a["Short_%_of_Shares_Outstanding_(Nov_15,_2019)_4"]}}|
 |先月の空売り株式|{{a["Shares_Short_(prior_month_Oct_15,_2019)_4"]}}|
 
-{{a.company}}の空売りは先月と比べて、{{a["Shares_Short_(Nov_15,_2019)_4"]|int-a["Shares_Short_(prior_month_Oct_15,_2019)_4"]|int}}と{%if a["Shares_Short_(Nov_15,_2019)_4"]|int-a["Shares_Short_(prior_month_Oct_15,_2019)_4"]|int>0 %}と増加しています。これは、買戻しなどがあれば上昇しますが、当面は厳しい状況かもしれません。{%else%}減少しています。{%endif%}
+{{a.company}}の空売りは先月と比べて、{{a["Shares_Short_(Nov_15,_2019)_4"][:-2]|int-a["Shares_Short_(prior_month_Oct_15,_2019)_4"][:-2]|int}}{%if a["Shares_Short_(Nov_15,_2019)_4"][:-2]|int-a["Shares_Short_(prior_month_Oct_15,_2019)_4"][:-2]|int>0 %}と増加しています。これは、買戻しなどがあれば上昇しますが、当面は厳しい状況かもしれません。{%else%}と減少しています。{%endif%}
 
 ## {{a.company}}の配当情報
 
