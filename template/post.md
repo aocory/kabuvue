@@ -139,8 +139,8 @@ dateの時点の{{a.company}}の評価尺度は以下になります。
 
 |||
 |-|-|
-|ベータ（3Y月次）|a['Beta_(3Y_Monthly)_']|
-|52週間|a['52-Week_Change_3']|
+|ベータ（3Y月次）|{{a['Beta_(3Y_Monthly)_']}}|
+|52週間|{{a['52-Week_Change_3']}}|
 |S＆P500 52週間|{{a["S&P500_52-Week_Change_3"]}}|
 |52週間最高|{{a['52_Week_High_3']}}|
 |52週安|{{a['52_Week_Low_3']}}|
