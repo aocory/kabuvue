@@ -3,7 +3,6 @@
 
 <iframe 
 v-bind:style="{ width: '100%', height: height + 'px' }"
-
 :src="url"
 frameborder="0" 
 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
