@@ -16,10 +16,10 @@ def write_page(dir_path, filename, disp_text):
         with open(os.path.join(dir_path, filename), "w", encoding='utf-8') as f:
             f.write(disp_text)
 
-def pptx(a):
+def pptx(a,symbol):
     for b in a:
         print(b)
-    prs = Presentation('C:\\Users\\tanimura\\Desktop\\stock.pptx')
+    prs = Presentation('./pptx/stock.pptx')
     for slide in prs.slides:
         for shape in slide.shapes:
             if not shape.has_text_frame:
@@ -44,7 +44,7 @@ def pptx(a):
                     continue
             for cell in shape.table.iter_cells():
                 print(cell.text)
-    prs.save('C:\\Users\\tanimura\\Desktop\\stock2.pptx')
+    prs.save('./pptx/'+symbol+'.pptx')
 
 def create_post(a):
     d_today = datetime.date.today()
@@ -109,5 +109,5 @@ if __name__ == '__main__':
     c=static_data(symbol)
     a.update(b)
     a.update(c)
-    pptx(a)
+    pptx(a,symbol)
     create_post(a)
