@@ -58,10 +58,6 @@ def create_post(a):
     write_page(dir_path, file_name, disp_text)
 
 
-def newmethod402():
-    return Company
-symbol = "M"
-
 def get_data(symbol):
     keyurl = 'https://finance.yahoo.com/quote/'+symbol
     r = requests.get(keyurl)
@@ -103,7 +99,7 @@ def slide1(a):
             f.write(txt) 
 
 if __name__ == '__main__':
-    symbol = "CATO"
+    symbol = "PEGI"
     a=get_data(symbol)
     b=div_his(symbol)
     c=static_data(symbol)
