@@ -9,7 +9,7 @@
 			<p>コリ@米国株</p>
 			<p>地方在住のサラリーマン。投資歴10年。米国株歴1年生。個別銘柄を分析したり、学習した事を発信するためにブログとYoutubeはじめました。</p>
 			<a href="https://twitter.com/taida_python"><img class="social-icon"src="/img/twitter.svg"/></a>
-			<a href="https://www.youtube.com/channel/UCQv17Fi9StcNwCcX_wj0G0g"><img class="social-icon"src="/img/youtube.svg"/></a>
+			<a href="https://www.youtube.com/channel/UCA-7d07Bi1v_w46oYaNUIZg"><img class="social-icon"src="/img/youtube.svg"/></a>
 		</div>
 		
 		<p class="footer-company-name">CodeRecipe &copy; 2019</p>
