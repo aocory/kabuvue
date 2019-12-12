@@ -25,7 +25,7 @@ meta:
 | | | | |
 |-|-|-|-|
 |Previous Close|{{a.Previous_Close}}|Market Cap|{{a.Market_Cap}}|
-|Open |{{a.Open}}|Beta (3Y Monthly)|{{a["Beta_(3Y_Monthly)"]}}|
+|Open |{{a.Open}}|Beta (3Y Monthly)|{{a["Beta_(5Y_Monthly)"]}}|
 |Bid|{{a.Bid}}|PE Ratio|{{a['PE_Ratio_(TTM)']}}|
 |Ask|{{a.Ask}}|EPS|{{a["EPS_(TTM)"]}}|
 |Day's Range|{{a["Day's_Range"]}}| Earnings Date |{{a["Earnings_Date"]}}|
@@ -38,7 +38,7 @@ meta:
 {% else %}
 現在は{{a['Previous_Close']}}ですので52週で見ても安値圏で推移しています。
 {% endif %}
-値動きの激しさを示すベータ値は、{{a["Beta_(3Y_Monthly)"]}}と{% if a["Beta_(3Y_Monthly)"]|int > 1 %}激しく{%else%}ゆるやかに{%endif%}なっています。
+値動きの激しさを示すベータ値は、{{a["Beta_(5Y_Monthly)"]}}と{% if a["Beta_(5Y_Monthly)"]|int > 1 %}激しく{%else%}ゆるやかに{%endif%}なっています。
 株価と企業の収益力を比較するPE Ratioは、{{a['PE_Ratio_(TTM)']}}となっています。
 一株あたりの利益は、{{a["EPS_(TTM)"]}}となっています。
 {{a.company}}の現在の次回配当利回りは、{{a["Forward_Annual_Dividend_Yield_4"]}}で、{% if a["Forward_Annual_Dividend_Yield_4"][:-2]|int > 7 %}と日本株の最高利回り銘柄JTと比べても高配当でかなり気になる銘柄です。{% elif a["Forward_Annual_Dividend_Yield_4"][:-2]|int > 5 %}日本株でもなかなか少ない高配当です。{%  elif a["Forward_Annual_Dividend_Yield_4"][:-2]|int > 4 %}日本株でも高配当に分類される部類の配当率です。{% else %}配当については、あまり惹かれるポイントはありません。
@@ -139,7 +139,7 @@ dateの時点の{{a.company}}の評価尺度は以下になります。
 
 |||
 |-|-|
-|ベータ（3Y月次）|{{a['Beta_(3Y_Monthly)_']}}|
+|ベータ（3Y月次）|{{a['Beta_(5Y_Monthly)_']}}|
 |52週間|{{a['52-Week_Change_3']}}|
 |S＆P500 52週間|{{a["S&P500_52-Week_Change_3"]}}|
 |52週間最高|{{a['52_Week_High_3']}}|
@@ -161,13 +161,13 @@ dateの時点の{{a.company}}の評価尺度は以下になります。
 |浮動株|{{a['Float_']}}|
 |インサイダーが保有する割合|{{a['%_Held_by_Insiders_1']}}|
 |機関が保有する割合|{{a['%_Held_by_Institutions_1']}}|
-|空売り|{{a["Shares_Short_(Nov_15,_2019)_4"]}}|
-|空売り比率|{{a['Short_Ratio_(Nov_15,_2019)_4']}}|
-|浮動株の空売りの比率|{{a["Short_%_of_Float_(Nov_15,_2019)_4"]}}|
-|発行済み株式の空売り率（|{{a["Short_%_of_Shares_Outstanding_(Nov_15,_2019)_4"]}}|
-|先月の空売り株式|{{a["Shares_Short_(prior_month_Oct_15,_2019)_4"]}}|
+|空売り|{{a["Shares_Short_(Nov_29,_2019)_4"]}}|
+|空売り比率|{{a['Short_Ratio_(Nov_29,_2019)_4']}}|
+|浮動株の空売りの比率|{{a["Short_%_of_Float_(Nov_29,_2019)_4"]}}|
+|発行済み株式の空売り率（|{{a["Short_%_of_Shares_Outstanding_(Nov_29,_2019)_4"]}}|
+|先月の空売り株式|{{a["Shares_Short_(prior_month_Oct_31,_2019)_4"]}}|
 
-{{a.company}}の空売りは先月と比べて、{{a["Shares_Short_(Nov_15,_2019)_4"][:-2]|int-a["Shares_Short_(prior_month_Oct_15,_2019)_4"][:-2]|int}}{%if a["Shares_Short_(Nov_15,_2019)_4"][:-2]|int-a["Shares_Short_(prior_month_Oct_15,_2019)_4"][:-2]|int>0 %}と増加しています。これは、買戻しなどがあれば上昇しますが、当面は厳しい状況かもしれません。{%else%}と減少しています。{%endif%}
+{{a.company}}の空売りは先月と比べて、{{a["Shares_Short_(Nov_29,_2019)_4"][:-2]|int-a["Shares_Short_(prior_month_Oct_31,_2019)_4"][:-2]|int}}{%if a["Shares_Short_(Nov_29,_2019)_4"][:-2]|int-a["Shares_Short_(prior_month_Oct_31,_2019)_4"][:-2]|int>0 %}と増加しています。これは、買戻しなどがあれば上昇しますが、当面は厳しい状況かもしれません。{%else%}と減少しています。{%endif%}
 
 ## {{a.company}}の配当情報
 
