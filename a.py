@@ -99,7 +99,7 @@ def slide1(a):
             f.write(txt) 
 
 if __name__ == '__main__':
-    symbol = "K"
+    symbol = "PM"
     a=get_data(symbol)
     b=div_his(symbol)
     c=static_data(symbol)
