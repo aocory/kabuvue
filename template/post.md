@@ -161,13 +161,13 @@ dateの時点の{{a.company}}の評価尺度は以下になります。
 |浮動株|{{a['Float_']}}|
 |インサイダーが保有する割合|{{a['%_Held_by_Insiders_1']}}|
 |機関が保有する割合|{{a['%_Held_by_Institutions_1']}}|
-|空売り|{{a["Shares_Short_(Nov_29,_2019)_4"]}}|
-|空売り比率|{{a['Short_Ratio_(Nov_29,_2019)_4']}}|
-|浮動株の空売りの比率|{{a["Short_%_of_Float_(Nov_29,_2019)_4"]}}|
-|発行済み株式の空売り率（|{{a["Short_%_of_Shares_Outstanding_(Nov_29,_2019)_4"]}}|
-|先月の空売り株式|{{a["Shares_Short_(prior_month_Oct_31,_2019)_4"]}}|
+|空売り|{{a["Shares_Short_(Dec_13,_2019)_4"]}}|
+|空売り比率|{{a['Short_Ratio_(Dec_13,_2019)_4']}}|
+|浮動株の空売りの比率|{{a["Short_%_of_Float_(Dec_13,_2019)_4"]}}|
+|発行済み株式の空売り率（|{{a["Short_%_of_Shares_Outstanding_(Dec_13,_2019)_4"]}}|
+|先月の空売り株式|{{a["Shares_Short_(prior_month_Nov_15,_2019)_4"]}}|
 
-{{a.company}}の空売りは先月と比べて、{{a["Shares_Short_(Nov_29,_2019)_4"][:-2]|int-a["Shares_Short_(prior_month_Oct_31,_2019)_4"][:-2]|int}}{%if a["Shares_Short_(Nov_29,_2019)_4"][:-2]|int-a["Shares_Short_(prior_month_Oct_31,_2019)_4"][:-2]|int>0 %}と増加しています。これは、買戻しなどがあれば上昇しますが、当面は厳しい状況かもしれません。{%else%}と減少しています。{%endif%}
+{{a.company}}の空売りは先月と比べて、{{a["Shares_Short_(Dec_13,_2019)_4"][:-2]|int-a["Shares_Short_(prior_month_Nov_15,_2019)_4"][:-2]|int}}{%if a["Shares_Short_(Dec_13,_2019)_4"][:-2]|int-a["Shares_Short_(prior_month_Nov_15,_2019)_4"][:-2]|int>0 %}と増加しています。これは、買戻しなどがあれば上昇しますが、当面は厳しい状況かもしれません。{%else%}と減少しています。{%endif%}
 
 ## {{a.company}}の配当情報
 
